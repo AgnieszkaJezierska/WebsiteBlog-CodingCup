@@ -567,56 +567,44 @@
     </section>
 
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="wrapper">
             <div class="text-title">
                 <h2>#kontakt</h2>
                 <div class="text-title__line"></div>
             </div>
-            <div class="contact__box">
-                <div class="contact__box-info">
-                    <a href="mailto:xsaminai@gmail.com"><img src="./image/icons/mail.svg" alt="Koperta">
-                        xsaminai@gmail.com</a>
-                    <p>Masz pytania albo masz ochotę porozmawiać zwyczajnie w świecie o programowaniu lub podzielić się
-                        dobrą radą? A może chcesz do czegoś się odwołać, bo moje myślenie jest błędne?
-                        Pisz śmiało pod wskazany adres maila lub skorzystaj z formularza kontaktowego! Chętnie poznam
-                        Twój tok myślenia :)</p>
-                </div>
-                <div class="img_contact_me"><img src="" alt=""></div> <!--TODO formularz do zrobienia-->
-                <div class="contact_textboxes">
-                    <div class="contact_form_area">
-                        <div class="contact_form_top">
-                            <div class="contact_form_left">
-                                <input type="text" placeholder="Imię" class="form_control">
-                            </div>
-                            <div class="contact_form_right">
-                                <input type="text" placeholder="Adres email" required
-                                    data-msg-required="Pole jest wymagane." class="form_control">
-                            </div>
-                        </div>
-                        <div class="contact_form_down">
-                            <textarea name="" required data-msg-required="Pole jest wymagane." rows="10"
-                                placeholder="Wiadomość" class="form_control"></textarea>
-                        </div>
-                        <button class="contact-btn" aria-label="Wyślij wiadomość" type="submit">Wyślij
-                            wiadomość</button>
+            <div class="contact__boxes">
+                <div class="contact__info">
+                    <a href="mailto:xsaminai@gmail.com"> xsaminai@gmail.com</a>
+                    <div class="contact__info-socialmedia">
+                        <a href=""><img src="./image/icons/facebook.svg" alt="Facebook"></a>
+                        <a href=""><img src="./image/icons/portfolio.svg" alt="Portfolio"></a>
+                        <a href=""><img src="./image/icons/linkedin.svg" alt="LinkedIn"></a>
+                        <a href=""><img src="./image/icons/github.svg" alt="GitHub"></a>
                     </div>
+                    <button class="contact__info-btn btn-special-effect">i. myResume</button>
                 </div>
+                <!--TODO formularz do zrobienia CSS i JS-->
+                <form class="contact__form">
+                    <div class="contact__form-top">
+                        <label for="name" class="contact__form-label">Imię i nazwisko:</label>
+                        <input type="text" class="contact__form-input" id="name">
+
+                        <label for="email" class="contact__form-label">Adres e-mail:</label>
+                        <input type="text" class="contact__form-input" id="email">
+                    </div>
+
+                    <label for="msg" class="contact__form-label"> Wiadomość:</label>
+                    <textarea id="msg" class="contact__form-textarea"></textarea>
+                    <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
+                </form>
             </div>
         </div>
     </section>
     <footer class="footer">
-        <div class="footer__socialmedia">
-            <a href=""><img src="./image/icons/facebook.svg" alt="Facebook"></a>
-            <a href=""><img src="./image/icons/portfolio.svg" alt="Portfolio"></a>
-            <a href=""><img src="./image/icons/linkedin.svg" alt="LinkedIn"></a>
-            <a href=""><img src="./image/icons/github.svg" alt="GitHub"></a>
-        </div>
-        <div class="footer__copyright">
-            <hr>
-            <h4>Moje wzloty i upadki programowania</h4>
-            <p>Prawa autorskie CodingCup&copy; | 2023</p>
-        </div>
+        <hr>
+        <p class="footer__copyright">Copyright &copy; <span class="footer__year"></span> CodingCup - Wszelkie
+            prawa zastrzeżone.</p>
     </footer>
 
 

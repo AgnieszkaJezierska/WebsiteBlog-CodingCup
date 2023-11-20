@@ -26,3 +26,13 @@ body {
 	width: 100%;
 	max-width: 1200px;
 }
+
+.text-title { //TODO dokończyć text-title
+	h2 {
+		font-size: 2.4rem;
+	}
+
+	&__line {
+		width: 70%;
+	}
+}
